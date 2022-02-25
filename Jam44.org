@@ -1,0 +1,45 @@
+
+* NINJA GAME
+  + Theme: MAGNETISM
+  + Puzzle game centered around moving in two dimensions through a
+    series of magnetic walls. On each level, the "floor" has dropped
+    out and been replaced with a deadly toxin and/or spiders and/or
+    some other exciting way to stop being alive. To win, you must
+    reach the single tile with the lever on it and hit the lever to
+    raise the floor and allow your party to continue.
+    - Naturally, it's insufficient to simply pass over the lever. You
+      must actually stop on the square containing the lever.
+** STORY
+   Dr. Lawrence Backstabber III and his son, Lenny, wanted to raid an
+   ancient tomb for treasure. Naturally, to ensure their safety, they
+   hired the services of a ninja (the silent protagonist of our
+   story). As soon as they enter the tomb, the floor opens up beneath
+   them, leaving Lenny and the good doctor trapped. The ninja, who
+   fortunately brought his magnetic gloves, must maneuver the walls
+   and hit a lever to close the floor back up on each level.
+** GAMEPLAY
+   The player moves in 2D space with the arrow keys. As long as
+   there's at least one magnetized tile in the eight adjacent blocks
+   to the player, he'll stay attached to that block. If the player
+   moves such that he would move /off/ a wall, he instead leaps in the
+   direction of the arrow key pressed, continuing motion until hitting
+   a wall or going offscreen.
+
+   The primary mechanic of the game is that the player has access to
+   several tetromino-shaped throwing stars. When the player throws one
+   of these stars, it travels out and produces new blocks that the
+   player can then climb on.
+*** LEVER
+    There is one of these on each stage. If the player stops on this
+    space, the player wins. It is insufficient to pass over the space;
+    motion must stop here explicitly.
+*** BLOCK
+    A solid block. Can be walked across. All such blocks are magnetic.
+*** FIRE EMITTER
+    Constantly blows a stream of fire on a given space. Can be covered
+    up, but if the player passes this space for any reason, he catches
+    fire and loses the game.
+*** TRAP TILE
+    A pressure plate. If pressed, kills everyone in the room, causing
+    a game over. The player is not heavy enough to press it, but
+    covering this with a block will detonate the trap.
