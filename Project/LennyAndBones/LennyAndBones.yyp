@@ -1,0 +1,54 @@
+{
+  "resources": [
+    {"id":{"name":"tiles_PyramidBG","path":"tilesets/tiles_PyramidBG/tiles_PyramidBG.yy",},"order":1,},
+    {"id":{"name":"scr_Constants","path":"scripts/scr_Constants/scr_Constants.yy",},"order":2,},
+    {"id":{"name":"module_Input","path":"scripts/module_Input/module_Input.yy",},"order":0,},
+    {"id":{"name":"spr_PyramidBG","path":"sprites/spr_PyramidBG/spr_PyramidBG.yy",},"order":0,},
+    {"id":{"name":"obj_Player","path":"objects/obj_Player/obj_Player.yy",},"order":2,},
+    {"id":{"name":"obj_Wall","path":"objects/obj_Wall/obj_Wall.yy",},"order":3,},
+    {"id":{"name":"enum_InputKey","path":"scripts/enum_InputKey/enum_InputKey.yy",},"order":1,},
+    {"id":{"name":"ctrl_RoomManager","path":"objects/ctrl_RoomManager/ctrl_RoomManager.yy",},"order":1,},
+    {"id":{"name":"spr_RoomManager","path":"sprites/spr_RoomManager/spr_RoomManager.yy",},"order":0,},
+    {"id":{"name":"module_Movement","path":"scripts/module_Movement/module_Movement.yy",},"order":0,},
+    {"id":{"name":"spr_Wall","path":"sprites/spr_Wall/spr_Wall.yy",},"order":1,},
+    {"id":{"name":"spr_Player","path":"sprites/spr_Player/spr_Player.yy",},"order":0,},
+    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":1,},
+  ],
+  "Options": [
+    {"name":"Linux","path":"options/linux/options_linux.yy",},
+    {"name":"macOS","path":"options/mac/options_mac.yy",},
+    {"name":"Main","path":"options/main/options_main.yy",},
+    {"name":"Windows","path":"options/windows/options_windows.yy",},
+    {"name":"operagx","path":"options/operagx/options_operagx.yy",},
+  ],
+  "isDnDProject": false,
+  "isEcma": false,
+  "configs": {
+    "name": "Default",
+    "children": [],
+  },
+  "RoomOrderNodes": [
+    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+  ],
+  "Folders": [
+    {"folderPath":"folders/Tiles.yy","order":2,"resourceVersion":"1.0","name":"Tiles","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Visuals.yy","order":3,"resourceVersion":"1.0","name":"Visuals","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Managers.yy","order":4,"resourceVersion":"1.0","name":"Managers","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Input.yy","order":5,"resourceVersion":"1.0","name":"Input","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Movement.yy","order":6,"resourceVersion":"1.0","name":"Movement","tags":[],"resourceType":"GMFolder",},
+  ],
+  "AudioGroups": [
+    {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
+  ],
+  "TextureGroups": [
+    {"isScaled":true,"autocrop":true,"border":2,"mipsToGenerate":0,"groupParent":null,"targets":-1,"resourceVersion":"1.3","name":"Default","resourceType":"GMTextureGroup",},
+  ],
+  "IncludedFiles": [],
+  "MetaData": {
+    "IDEVersion": "2022.2.0.614",
+  },
+  "resourceVersion": "1.5",
+  "name": "LennyAndBones",
+  "tags": [],
+  "resourceType": "GMProject",
+}
