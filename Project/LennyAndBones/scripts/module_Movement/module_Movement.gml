@@ -120,7 +120,6 @@ enum HandDrawRule {
 }
 
 Movement.sidemaskRule = function(sidemask) {
-  show_debug_message(sidemask);
   if (sidemask & 68 == 68) {
     return HandDrawRule.CardinalOppositeNS;
   } else if (sidemask & 17 == 17) {
