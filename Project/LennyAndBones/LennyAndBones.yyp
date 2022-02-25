@@ -2,6 +2,7 @@
   "resources": [
     {"id":{"name":"spr_PlayerHand","path":"sprites/spr_PlayerHand/spr_PlayerHand.yy",},"order":5,},
     {"id":{"name":"tiles_PyramidBG","path":"tilesets/tiles_PyramidBG/tiles_PyramidBG.yy",},"order":1,},
+    {"id":{"name":"spr_TargetBox","path":"sprites/spr_TargetBox/spr_TargetBox.yy",},"order":2,},
     {"id":{"name":"scr_Constants","path":"scripts/scr_Constants/scr_Constants.yy",},"order":2,},
     {"id":{"name":"module_Input","path":"scripts/module_Input/module_Input.yy",},"order":0,},
     {"id":{"name":"spr_PyramidBG","path":"sprites/spr_PyramidBG/spr_PyramidBG.yy",},"order":0,},
@@ -12,6 +13,7 @@
     {"id":{"name":"ctrl_RoomManager","path":"objects/ctrl_RoomManager/ctrl_RoomManager.yy",},"order":1,},
     {"id":{"name":"spr_RoomManager","path":"sprites/spr_RoomManager/spr_RoomManager.yy",},"order":0,},
     {"id":{"name":"angle_lerp","path":"scripts/angle_lerp/angle_lerp.yy",},"order":1,},
+    {"id":{"name":"ctrl_TargetBoxDisplay","path":"objects/ctrl_TargetBoxDisplay/ctrl_TargetBoxDisplay.yy",},"order":3,},
     {"id":{"name":"module_Movement","path":"scripts/module_Movement/module_Movement.yy",},"order":0,},
     {"id":{"name":"spr_Wall","path":"sprites/spr_Wall/spr_Wall.yy",},"order":1,},
     {"id":{"name":"spr_Player","path":"sprites/spr_Player/spr_Player.yy",},"order":0,},

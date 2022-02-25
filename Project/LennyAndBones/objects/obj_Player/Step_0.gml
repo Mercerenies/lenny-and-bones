@@ -2,6 +2,8 @@
 var MOVE_SPEED = 2;
 var FLY_SPEED = 4;
 
+anim_index += 1;
+
 if (animating) {
   if (flying) {
     x += FLY_SPEED * dcos(move_dir * 90);
@@ -11,6 +13,7 @@ if (animating) {
     y += MOVE_SPEED * dsin(move_dir * 90);
   }
   if ((x % GRID_SIZE == 0) && (y % GRID_SIZE == 0)) {
+    just_left_wall = false;
     var nextx = x + GRID_SIZE * dcos(move_dir * 90);
     var nexty = y + GRID_SIZE * dsin(move_dir * 90);
     src_x = x;
@@ -23,7 +26,7 @@ if (animating) {
       move_dir = -1;
     }
   }
-} else {
+} else if (ctrl_RoomManager.acceptingInput()) {
   var input_key = Input.getDirection();
   if (input_key != InputKey.None) {
     var targetx = x + GRID_SIZE * dcos(input_key * 90);
@@ -39,6 +42,7 @@ if (animating) {
         animating = true;
         move_dir = input_key;
         flying = true;
+        just_left_wall = true;
       }
       src_x = x;
       src_y = y;
