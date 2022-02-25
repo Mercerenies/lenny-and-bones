@@ -13,6 +13,10 @@ if (animating) {
   if ((x % GRID_SIZE == 0) && (y % GRID_SIZE == 0)) {
     var nextx = x + GRID_SIZE * dcos(move_dir * 90);
     var nexty = y + GRID_SIZE * dsin(move_dir * 90);
+    src_x = x;
+    src_y = y;
+    dest_x = nextx;
+    dest_y = nexty;
     if ((!flying) || (Movement.magnetAt(nextx, nexty))) {
       animating = false;
       flying = false;
@@ -36,6 +40,10 @@ if (animating) {
         move_dir = input_key;
         flying = true;
       }
+      src_x = x;
+      src_y = y;
+      dest_x = x + GRID_SIZE * dcos(move_dir * 90);
+      dest_y = y + GRID_SIZE * dsin(move_dir * 90);
     }
   }
 }
