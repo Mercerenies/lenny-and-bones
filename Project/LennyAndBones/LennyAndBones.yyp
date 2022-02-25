@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"spr_PlayerHand","path":"sprites/spr_PlayerHand/spr_PlayerHand.yy",},"order":5,},
     {"id":{"name":"tiles_PyramidBG","path":"tilesets/tiles_PyramidBG/tiles_PyramidBG.yy",},"order":1,},
     {"id":{"name":"scr_Constants","path":"scripts/scr_Constants/scr_Constants.yy",},"order":2,},
     {"id":{"name":"module_Input","path":"scripts/module_Input/module_Input.yy",},"order":0,},
