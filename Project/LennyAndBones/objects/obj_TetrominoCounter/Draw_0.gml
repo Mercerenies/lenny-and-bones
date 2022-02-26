@@ -8,6 +8,9 @@ if (ctrl_RoomManager.getHighlightedTetromino() == self.id) {
 if (ctrl_RoomManager.draggingTetromino == self.image_index) {
   image_alpha = 1.0;
 }
+if (count <= 0) {
+  image_alpha = 0.1;
+}
 
 draw_self();
 

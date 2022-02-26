@@ -26,6 +26,11 @@ if (Input.mouseUp()) {
     if (!is_undefined(target)) {
       /////
       tetromino.placeAt(target.xx, target.yy);
+      with (obj_TetrominoCounter) {
+        if (other.draggingTetromino == image_index) {
+          count -= 1;
+        }
+      }
     }
   }
 
