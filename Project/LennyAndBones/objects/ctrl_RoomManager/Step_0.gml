@@ -24,6 +24,9 @@ if (Input.mouseUp()) {
     var tetromino = toTetromino();
     var target = getMouseTarget();
     if (!is_undefined(target)) {
+
+      ctrl_UndoManager.pushStack(UndoCut);
+
       with (instance_create_layer(obj_Player.x + GRID_SIZE / 2, obj_Player.y + GRID_SIZE / 2, "Instances_UI", obj_ThrowingAnim)) {
         dest_x = target.xx + GRID_SIZE / 2;
         dest_y = target.yy + GRID_SIZE / 2;
@@ -43,8 +46,10 @@ if (Input.mouseUp()) {
       with (obj_TetrominoCounter) {
         if (other.draggingTetromino == image_index) {
           count -= 1;
+          ctrl_UndoManager.pushStack(new DecrementCounterEvent(self));
         }
       }
+
     }
   }
 
@@ -54,5 +59,11 @@ if (Input.mouseUp()) {
 }
 
 if (Input.escPressed()) {
+  // TODO Not allowed if showing dialogue
   room_restart();
+}
+
+if ((Input.backspacePressed()) && (canUndo())) {
+  // TODO Not allowed if showing dialogue
+  ctrl_UndoManager.backtrack();
 }

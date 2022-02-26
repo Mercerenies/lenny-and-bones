@@ -46,6 +46,7 @@ function Tetromino(arr_) constructor {
     }
     for (var i = 0; i < array_length(instances); i++) {
       instances[i].x -= xoffset;
+      ctrl_UndoManager.pushStack(new PlaceWallEvent(instances[i]));
     }
     return true;
   }

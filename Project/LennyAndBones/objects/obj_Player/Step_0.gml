@@ -20,7 +20,7 @@ if (animating) {
     src_y = y;
     dest_x = nextx;
     dest_y = nexty;
-    if ((!flying) || (Movement.magnetAt(nextx, nexty))) {
+    if ((isDead()) || (!flying) || (Movement.magnetAt(nextx, nexty))) {
       animating = false;
       flying = false;
       move_dir = -1;
@@ -56,6 +56,8 @@ if (ctrl_RoomManager.acceptingInput()) {
         flying = true;
         just_left_wall = true;
       }
+      ctrl_UndoManager.pushStack(UndoCut);
+      ctrl_UndoManager.pushStack(new PlayerMoveEvent(x, y));
       src_x = x;
       src_y = y;
       dest_x = x + GRID_SIZE * dcos(move_dir * 90);

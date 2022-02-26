@@ -8,6 +8,7 @@ checkPoisonRelease = function() {
   if (position_meeting(x, y, obj_Wall)) {
     if ((!obj_Player.isDead()) && (!instance_exists(obj_DyingAnim))) {
       instance_create_layer(-128, -128, "Instances_UI", obj_DyingAnim);
+      ctrl_UndoManager.pushStack(new PlayerMoveEvent(obj_Player.x, obj_Player.y));
     }
   }
 }

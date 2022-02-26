@@ -18,6 +18,17 @@ acceptingInput = function() {
   return true;
 }
 
+// Like acceptingInput but still permissible if the player is dead.
+canUndo = function() {
+  if (obj_Player.animating) {
+    return false;
+  }
+  if (instance_exists(par_Animation)) {
+    return false;
+  }
+  return true;
+}
+
 getHighlightedTetromino = function() {
   if (obj_Player.isDead()) {
     return noone;
