@@ -67,3 +67,6 @@ if ((Input.backspacePressed()) && (canUndo())) {
   // TODO Not allowed if showing dialogue
   ctrl_UndoManager.backtrack();
 }
+
+// Sand particle effects
+ctrl_ParticleManager.sandyWinds();

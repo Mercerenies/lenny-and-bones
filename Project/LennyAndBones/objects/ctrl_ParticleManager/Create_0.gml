@@ -37,7 +37,26 @@ part_type_colour_mix(poison, $f020a0, $d30094);
 part_type_alpha2(poison, 0.5, 0);
 part_type_life(poison, 24, 64);
 
+player_sand = part_type_create();
+part_type_shape(player_sand, pt_shape_pixel);
+part_type_size(player_sand, 1, 1, 0, 0);
+part_type_scale(player_sand, 1, 1);
+part_type_speed(player_sand, 0.5, 4, 0, 0);
+part_type_direction(player_sand, -5, 30, 0, 0);
+part_type_gravity(player_sand, 0, 0);
+part_type_orientation(player_sand, 0, 0, 0, 0, false);
+part_type_colour_mix(player_sand, $00ffff, $60a4f4);
+part_type_alpha1(player_sand, 0.5);
+part_type_life(player_sand, 120, 240);
+// TODO More background effects, and make the sand faster on later stages (it's more epic ^.^)
+
 cloud_emitter = part_emitter_create(system);
+sand_emitter = part_emitter_create(system);
+part_emitter_region(system, sand_emitter, -128, room_width, 0, room_height, ps_shape_rectangle, ps_distr_linear);
+
+sandyWinds = function() {
+  part_emitter_burst(system, sand_emitter, player_sand, 20);
+}
 
 puffOfClouds = function(xx, yy) {
   part_emitter_region(system, cloud_emitter, xx - 80, xx + 80, yy - 80, yy + 80, ps_shape_ellipse, ps_distr_linear);
