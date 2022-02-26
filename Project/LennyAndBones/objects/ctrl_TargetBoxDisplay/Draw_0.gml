@@ -2,7 +2,7 @@
 var highlighted_tetromino = ctrl_RoomManager.getHighlightedTetromino();
 var projected_tetromino = undefined;
 if (!is_undefined(ctrl_RoomManager.draggingTetromino)) {
-  projected_tetromino = Blocks.fromIndex(ctrl_RoomManager.draggingTetromino).rotated(ctrl_RoomManager.globalBlockRot);
+  projected_tetromino = ctrl_RoomManager.toTetromino();
 } else if (instance_exists(highlighted_tetromino)) {
   projected_tetromino = highlighted_tetromino.toTetromino();
 }
