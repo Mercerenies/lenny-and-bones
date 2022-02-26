@@ -4,3 +4,5 @@ enum Headshot {
   Lenny = 0,
   Bones = 1,
 }
+
+// TODO More reactionary headshots
