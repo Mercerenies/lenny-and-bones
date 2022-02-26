@@ -1,5 +1,6 @@
 
 globalBlockRot = 0;
+startBlockRot = 0;
 
 canFly = false;
 canRotate = false;

@@ -1,0 +1,2 @@
+
+startBlockRot = globalBlockRot;

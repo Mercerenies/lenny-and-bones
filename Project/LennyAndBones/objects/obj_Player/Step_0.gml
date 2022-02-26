@@ -26,6 +26,28 @@ if (animating) {
       move_dir = -1;
     }
 
+    // Check for red hat
+    var redhat = instance_position(x, y, obj_RedHat);
+    if (instance_exists(redhat)) {
+      ctrl_UndoManager.pushStack(new InvisibleEvent(redhat));
+      ctrl_UndoManager.pushStack(new CanFlyEvent());
+      ctrl_RoomManager.canFly = true;
+      with (redhat) {
+        visible = false;
+      }
+    }
+
+    // Check for blue hat
+    var bluehat = instance_position(x, y, obj_BlueHat);
+    if (instance_exists(bluehat)) {
+      ctrl_UndoManager.pushStack(new InvisibleEvent(bluehat));
+      ctrl_UndoManager.pushStack(new CanRotateEvent());
+      ctrl_RoomManager.canRotate = true;
+      with (bluehat) {
+        visible = false;
+      }
+    }
+
     // Check for death :(
     if (position_meeting(x, y, obj_FireTile)) {
       instance_create_layer(-128, -128, "Instances_UI", obj_DyingAnim);
