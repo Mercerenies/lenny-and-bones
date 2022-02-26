@@ -31,6 +31,11 @@ if (animating) {
       instance_create_layer(-128, -128, "Instances_UI", obj_DyingAnim);
     }
 
+    // Check for winning :)
+    if ((!animating) && (!isDead()) && (!instance_exists(obj_DyingAnim)) && (position_meeting(x, y, obj_LeverTile))) {
+      win();
+    }
+
   }
 }
 if (ctrl_RoomManager.acceptingInput()) {

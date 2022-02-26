@@ -2,6 +2,7 @@
   "resources": [
     {"id":{"name":"spr_PlayerHand","path":"sprites/spr_PlayerHand/spr_PlayerHand.yy",},"order":5,},
     {"id":{"name":"tiles_PyramidBG","path":"tilesets/tiles_PyramidBG/tiles_PyramidBG.yy",},"order":1,},
+    {"id":{"name":"obj_LeverTile","path":"objects/obj_LeverTile/obj_LeverTile.yy",},"order":11,},
     {"id":{"name":"obj_ThrowingAnim","path":"objects/obj_ThrowingAnim/obj_ThrowingAnim.yy",},"order":1,},
     {"id":{"name":"spr_TargetBox","path":"sprites/spr_TargetBox/spr_TargetBox.yy",},"order":2,},
     {"id":{"name":"struct_Tetromino","path":"scripts/struct_Tetromino/struct_Tetromino.yy",},"order":2,},
@@ -15,6 +16,7 @@
     {"id":{"name":"par_Animation","path":"objects/par_Animation/par_Animation.yy",},"order":0,},
     {"id":{"name":"module_Blocks","path":"scripts/module_Blocks/module_Blocks.yy",},"order":3,},
     {"id":{"name":"obj_DyingAnim","path":"objects/obj_DyingAnim/obj_DyingAnim.yy",},"order":3,},
+    {"id":{"name":"spr_LeverTile","path":"sprites/spr_LeverTile/spr_LeverTile.yy",},"order":10,},
     {"id":{"name":"spr_ThrowingAnim","path":"sprites/spr_ThrowingAnim/spr_ThrowingAnim.yy",},"order":2,},
     {"id":{"name":"obj_Player","path":"objects/obj_Player/obj_Player.yy",},"order":2,},
     {"id":{"name":"spr_BlockTargetBox","path":"sprites/spr_BlockTargetBox/spr_BlockTargetBox.yy",},"order":4,},

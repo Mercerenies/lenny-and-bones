@@ -1,12 +1,12 @@
 {
   "spriteId": {
-    "name": "spr_ParticleManager",
-    "path": "sprites/spr_ParticleManager/spr_ParticleManager.yy",
+    "name": "spr_LeverTile",
+    "path": "sprites/spr_LeverTile/spr_LeverTile.yy",
   },
   "solid": false,
-  "visible": false,
+  "visible": true,
   "spriteMaskId": null,
-  "persistent": true,
+  "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
@@ -22,16 +22,16 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":5,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Managers",
-    "path": "folders/Managers.yy",
+    "name": "Tiles",
+    "path": "folders/Tiles.yy",
   },
   "resourceVersion": "1.0",
-  "name": "ctrl_ParticleManager",
+  "name": "obj_LeverTile",
   "tags": [],
   "resourceType": "GMObject",
 }

@@ -9,3 +9,7 @@ for (var i = 0; i < 8; i++) {
 if (position_meeting(x, y, obj_FireTile)) {
   draw_sprite_ext(spr_FireTile, 0, x, y, 1, 1, 0, c_white, 0.5);
 }
+
+if (position_meeting(x, y, obj_LeverTile)) {
+  draw_sprite_ext(spr_LeverTile, 0, x, y, 1, 1, 0, c_white, 0.5);
+}
