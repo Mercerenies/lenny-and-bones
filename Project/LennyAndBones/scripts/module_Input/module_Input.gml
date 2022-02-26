@@ -16,3 +16,11 @@ Input.getDirection = function() {
     return InputKey.None;
   }
 }
+
+Input.wheelUp = function() {
+  return keyboard_check_pressed(ord("Q")) || mouse_wheel_up();
+}
+
+Input.wheelDown = function() {
+  return keyboard_check_pressed(ord("E")) || mouse_wheel_down();
+}
