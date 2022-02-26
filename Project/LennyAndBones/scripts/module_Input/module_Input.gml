@@ -40,3 +40,11 @@ Input.escPressed = function() {
 Input.backspacePressed = function() {
   return keyboard_check_pressed(vk_backspace);
 }
+
+Input.confirmPressed = function() {
+  return mouse_check_button_pressed(mb_left) || keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space);
+}
+
+Input.helpPressed = function() {
+  return keyboard_check_pressed(vk_f1);
+}

@@ -15,6 +15,9 @@ acceptingInput = function() {
   if (instance_exists(par_Animation)) {
     return false;
   }
+  if (ctrl_DiaManager.isActive()) {
+    return false;
+  }
   return true;
 }
 
@@ -26,11 +29,14 @@ canUndo = function() {
   if (instance_exists(par_Animation)) {
     return false;
   }
+  if (ctrl_DiaManager.isActive()) {
+    return false;
+  }
   return true;
 }
 
 getHighlightedTetromino = function() {
-  if (obj_Player.isDead()) {
+  if ((obj_Player.isDead()) || (ctrl_DiaManager.isActive())) {
     return noone;
   }
   var inst = instance_position(mouse_x, mouse_y, obj_TetrominoCounter);

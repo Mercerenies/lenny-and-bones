@@ -59,12 +59,13 @@ if (Input.mouseUp()) {
 }
 
 if (Input.escPressed()) {
-  // TODO Not allowed if showing dialogue
-  room_restart();
+  if (!ctrl_DiaManager.isActive()) {
+    global.hideDialogue = true;
+    room_restart();
+  }
 }
 
 if ((Input.backspacePressed()) && (canUndo())) {
-  // TODO Not allowed if showing dialogue
   ctrl_UndoManager.backtrack();
 }
 
