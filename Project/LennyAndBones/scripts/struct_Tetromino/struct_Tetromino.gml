@@ -33,6 +33,23 @@ function Tetromino(arr_) constructor {
     return result;
   }
 
+  // Precondition: canPlaceAt(xx, yy) shall be true.
+  static placeAt = function(xx, yy) {
+    var instances = [];
+    var xoffset = 9999;
+    for (var i = 0; i < array_length(arr); i++) {
+      var point = arr[i];
+      instances[i] = instance_create_layer(xx + GRID_SIZE * point.xx + xoffset, yy + GRID_SIZE * point.yy, "Instances", obj_Wall);
+    }
+    for (var i = 0; i < array_length(instances); i++) {
+      instances[i].setupSidemask();
+    }
+    for (var i = 0; i < array_length(instances); i++) {
+      instances[i].x -= xoffset;
+    }
+    return true;
+  }
+
   static canPlaceAt = function(xx, yy) {
     for (var i = 0; i < array_length(arr); i++) {
       var point = arr[i];

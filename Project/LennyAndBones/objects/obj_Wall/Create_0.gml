@@ -1,7 +1,7 @@
 
 sidemask = 0;
 
-_setupSidemask = function() {
+setupSidemask = function() {
   sidemask = 255 & ~Movement.sidemask(x, y);
   // Exceptions for the edge of the map.
   if (x == 64) {

@@ -1,2 +1,2 @@
 
-_setupSidemask();
+setupSidemask();

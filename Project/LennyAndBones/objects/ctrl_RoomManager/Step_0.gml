@@ -19,6 +19,16 @@ if (Input.mouseDown()) {
 }
 
 if (Input.mouseUp()) {
+
+  if ((acceptingInput()) && (!is_undefined(draggingTetromino))) {
+    var tetromino = toTetromino();
+    var target = getMouseTarget();
+    if (!is_undefined(target)) {
+      /////
+      tetromino.placeAt(target.xx, target.yy);
+    }
+  }
+
   draggingTetromino = undefined;
   draggingX = 0;
   draggingY = 0;
