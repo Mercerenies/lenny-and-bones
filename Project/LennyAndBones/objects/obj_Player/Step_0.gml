@@ -26,7 +26,8 @@ if (animating) {
       move_dir = -1;
     }
   }
-} else if (ctrl_RoomManager.acceptingInput()) {
+}
+if (ctrl_RoomManager.acceptingInput()) {
   var input_key = Input.getDirection();
   if (input_key != InputKey.None) {
     var targetx = x + GRID_SIZE * dcos(input_key * 90);

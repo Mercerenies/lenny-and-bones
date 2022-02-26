@@ -1,4 +1,6 @@
 
+var highlighted_tetromino = ctrl_RoomManager.getHighlightedTetromino();
+
 draw_set_alpha(image_alpha);
 if (ctrl_RoomManager.acceptingInput()) {
 
@@ -29,6 +31,25 @@ if (ctrl_RoomManager.acceptingInput()) {
         }
       }
       draw_sprite(spr_TargetBox, image_index, targetx, targety);
+    }
+  }
+
+  if (instance_exists(highlighted_tetromino)) {
+
+    // Show where the block would end up in each direction.
+    for (var dir = 0; dir < 360; dir += 90) {
+
+      var tetromino = highlighted_tetromino.toTetromino();
+      var target_point = tetromino.project(obj_Player.x, obj_Player.y, dir);
+
+      if (!is_undefined(target_point)) {
+        for (var i = 0; i < array_length(tetromino.arr); i++) {
+          var xx = target_point.xx + GRID_SIZE * tetromino.arr[i].xx;
+          var yy = target_point.yy + GRID_SIZE * tetromino.arr[i].yy;
+          draw_sprite(spr_BlockTargetBox, image_index, xx, yy);
+        }
+      }
+
     }
 
   }

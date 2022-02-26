@@ -1,6 +1,6 @@
 {
-  "bboxMode": 0,
-  "collisionKind": 4,
+  "bboxMode": 2,
+  "collisionKind": 2,
   "type": 0,
   "origin": 9,
   "preMultiplyAlpha": false,
@@ -10,7 +10,7 @@
   "bbox_left": 0,
   "bbox_right": 95,
   "bbox_top": 0,
-  "bbox_bottom": 127,
+  "bbox_bottom": 95,
   "HTile": false,
   "VTile": false,
   "For3D": false,

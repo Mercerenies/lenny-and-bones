@@ -9,5 +9,10 @@ acceptingInput = function() {
 }
 
 getHighlightedTetromino = function() {
-  return instance_position(mouse_x, mouse_y, obj_TetrominoCounter);
+  var inst = instance_position(mouse_x, mouse_y, obj_TetrominoCounter);
+  if ((instance_exists(inst)) && (!inst.visible)) {
+    return noone;
+  } else {
+    return inst;
+  }
 }
