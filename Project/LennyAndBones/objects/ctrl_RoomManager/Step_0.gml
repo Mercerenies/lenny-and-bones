@@ -49,3 +49,7 @@ if (Input.mouseUp()) {
   draggingX = 0;
   draggingY = 0;
 }
+
+if (Input.escPressed()) {
+  room_restart();
+}

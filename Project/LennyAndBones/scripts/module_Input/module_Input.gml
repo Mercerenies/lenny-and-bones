@@ -32,3 +32,7 @@ Input.mouseDown = function() {
 Input.mouseUp = function() {
   return mouse_check_button_released(mb_left);
 }
+
+Input.escPressed = function() {
+  return keyboard_check_pressed(vk_escape);
+}
