@@ -33,6 +33,7 @@ if (Input.mouseUp()) {
           "target": target,
           "call": function() {
             tetromino.placeAt(target.xx, target.yy);
+            ctrl_ParticleManager.puffOfClouds(target.xx + GRID_SIZE / 2, target.yy + GRID_SIZE / 2);
           }
         };
       }
