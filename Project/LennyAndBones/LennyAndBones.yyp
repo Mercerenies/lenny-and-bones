@@ -2,6 +2,7 @@
   "resources": [
     {"id":{"name":"spr_PlayerHand","path":"sprites/spr_PlayerHand/spr_PlayerHand.yy",},"order":5,},
     {"id":{"name":"tiles_PyramidBG","path":"tilesets/tiles_PyramidBG/tiles_PyramidBG.yy",},"order":1,},
+    {"id":{"name":"obj_ThrowingAnim","path":"objects/obj_ThrowingAnim/obj_ThrowingAnim.yy",},"order":1,},
     {"id":{"name":"spr_TargetBox","path":"sprites/spr_TargetBox/spr_TargetBox.yy",},"order":2,},
     {"id":{"name":"struct_Tetromino","path":"scripts/struct_Tetromino/struct_Tetromino.yy",},"order":2,},
     {"id":{"name":"scr_Constants","path":"scripts/scr_Constants/scr_Constants.yy",},"order":2,},
@@ -9,7 +10,9 @@
     {"id":{"name":"obj_TetrominoPlaceholder","path":"objects/obj_TetrominoPlaceholder/obj_TetrominoPlaceholder.yy",},"order":1,},
     {"id":{"name":"spr_PyramidBG","path":"sprites/spr_PyramidBG/spr_PyramidBG.yy",},"order":0,},
     {"id":{"name":"struct_Point","path":"scripts/struct_Point/struct_Point.yy",},"order":4,},
+    {"id":{"name":"par_Animation","path":"objects/par_Animation/par_Animation.yy",},"order":0,},
     {"id":{"name":"module_Blocks","path":"scripts/module_Blocks/module_Blocks.yy",},"order":3,},
+    {"id":{"name":"spr_ThrowingAnim","path":"sprites/spr_ThrowingAnim/spr_ThrowingAnim.yy",},"order":2,},
     {"id":{"name":"obj_Player","path":"objects/obj_Player/obj_Player.yy",},"order":2,},
     {"id":{"name":"spr_BlockTargetBox","path":"sprites/spr_BlockTargetBox/spr_BlockTargetBox.yy",},"order":4,},
     {"id":{"name":"obj_Wall","path":"objects/obj_Wall/obj_Wall.yy",},"order":3,},
@@ -17,6 +20,7 @@
     {"id":{"name":"spr_WallImage","path":"sprites/spr_WallImage/spr_WallImage.yy",},"order":4,},
     {"id":{"name":"obj_TetrominoCounter","path":"objects/obj_TetrominoCounter/obj_TetrominoCounter.yy",},"order":2,},
     {"id":{"name":"ctrl_RoomManager","path":"objects/ctrl_RoomManager/ctrl_RoomManager.yy",},"order":1,},
+    {"id":{"name":"toward","path":"scripts/toward/toward.yy",},"order":5,},
     {"id":{"name":"spr_RoomManager","path":"sprites/spr_RoomManager/spr_RoomManager.yy",},"order":0,},
     {"id":{"name":"angle_lerp","path":"scripts/angle_lerp/angle_lerp.yy",},"order":1,},
     {"id":{"name":"ctrl_TargetBoxDisplay","path":"objects/ctrl_TargetBoxDisplay/ctrl_TargetBoxDisplay.yy",},"order":3,},
@@ -50,6 +54,7 @@
     {"folderPath":"folders/Input.yy","order":5,"resourceVersion":"1.0","name":"Input","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Movement.yy","order":6,"resourceVersion":"1.0","name":"Movement","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/UI.yy","order":7,"resourceVersion":"1.0","name":"UI","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Visuals/Animations.yy","order":5,"resourceVersion":"1.0","name":"Animations","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},

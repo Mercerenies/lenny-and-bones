@@ -9,6 +9,9 @@ acceptingInput = function() {
   if (obj_Player.animating) {
     return false;
   }
+  if (instance_exists(par_Animation)) {
+    return false;
+  }
   return true;
 }
 

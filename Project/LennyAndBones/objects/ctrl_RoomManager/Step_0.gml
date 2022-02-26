@@ -24,8 +24,18 @@ if (Input.mouseUp()) {
     var tetromino = toTetromino();
     var target = getMouseTarget();
     if (!is_undefined(target)) {
-      /////
-      tetromino.placeAt(target.xx, target.yy);
+      with (instance_create_layer(obj_Player.x + GRID_SIZE / 2, obj_Player.y + GRID_SIZE / 2, "Instances_UI", obj_ThrowingAnim)) {
+        dest_x = target.xx + GRID_SIZE / 2;
+        dest_y = target.yy + GRID_SIZE / 2;
+        image_index = other.draggingTetromino;
+        on_arrive = {
+          "tetromino": tetromino,
+          "target": target,
+          "call": function() {
+            tetromino.placeAt(target.xx, target.yy);
+          }
+        };
+      }
       with (obj_TetrominoCounter) {
         if (other.draggingTetromino == image_index) {
           count -= 1;
