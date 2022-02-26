@@ -25,6 +25,18 @@ part_type_colour3(player_fire, $2727a1, $7dced4, $8ddee4);
 part_type_alpha3(player_fire, 1.0, 0.7, 0.0);
 part_type_life(player_fire, 5, 12);
 
+poison = part_type_create();
+part_type_shape(poison, pt_shape_ring);
+part_type_size(poison, 0.1, 0.2, 0, 0);
+part_type_scale(poison, 1, 1);
+part_type_speed(poison, 0.5, 1.0, 0, 0);
+part_type_direction(poison, 45, 135, 0, 5);
+part_type_gravity(poison, 0, 0);
+part_type_orientation(poison, 0, 0, 0, 0, false);
+part_type_colour_mix(poison, $f020a0, $d30094);
+part_type_alpha2(poison, 0.5, 0);
+part_type_life(poison, 24, 64);
+
 cloud_emitter = part_emitter_create(system);
 
 puffOfClouds = function(xx, yy) {
