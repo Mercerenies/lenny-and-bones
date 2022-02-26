@@ -23,7 +23,7 @@ part_type_gravity(player_fire, 0, 0);
 part_type_orientation(player_fire, 0, 0, 0, 0, false);
 part_type_colour3(player_fire, $2727a1, $7dced4, $8ddee4);
 part_type_alpha3(player_fire, 1.0, 0.7, 0.0);
-part_type_life(player_fire, 10, 20);
+part_type_life(player_fire, 5, 12);
 
 cloud_emitter = part_emitter_create(system);
 

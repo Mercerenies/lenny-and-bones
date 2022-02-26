@@ -1,12 +1,13 @@
+var alpha = image_alpha;
 if (!animating) {
   // We're in a static position, so place our hands there.
   var sidemask = Movement.sidemask(x, y);
   var rule = Movement.sidemaskRule(sidemask);
   var arr = Movement.playerHands(rule);
-  draw_sprite_ext(spr_PlayerHand, 0, x + arr[0] * GRID_SIZE, y + arr[1] * GRID_SIZE, 1, 1, arr[2], c_white, 1);
-  draw_sprite_ext(spr_PlayerHand, 0, x + arr[3] * GRID_SIZE, y + arr[4] * GRID_SIZE, 1, 1, arr[5], c_white, 1);
+  draw_sprite_ext(spr_PlayerHand, 0, x + arr[0] * GRID_SIZE, y + arr[1] * GRID_SIZE, 1, 1, arr[2], c_white, alpha);
+  draw_sprite_ext(spr_PlayerHand, 0, x + arr[3] * GRID_SIZE, y + arr[4] * GRID_SIZE, 1, 1, arr[5], c_white, alpha);
 } else {
-  // We're moving and not flying, so interpolate.
+  // We're moving, so interpolate.
   var progress;
   if (src_x != dest_x) {
     progress = (x - src_x) / (dest_x - src_x);
@@ -53,9 +54,8 @@ if (!animating) {
   var rhs_y = lerp(src_arr[4], dest_arr[4], progress);
   var rhs_r = angle_lerp(src_arr[5], dest_arr[5], progress);
 
-  draw_sprite_ext(spr_PlayerHand, 0, lhs_x, lhs_y, 1, 1, lhs_r, c_white, 1);
-  draw_sprite_ext(spr_PlayerHand, 0, rhs_x, rhs_y, 1, 1, rhs_r, c_white, 1);
-  // TODO Proper interpolation on rotations (lerp fails us here)
+  draw_sprite_ext(spr_PlayerHand, 0, lhs_x, lhs_y, 1, 1, lhs_r, c_white, alpha);
+  draw_sprite_ext(spr_PlayerHand, 0, rhs_x, rhs_y, 1, 1, rhs_r, c_white, alpha);
 }
 
 draw_self();

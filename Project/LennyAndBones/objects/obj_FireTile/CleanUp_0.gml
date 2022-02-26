@@ -1,0 +1,2 @@
+
+part_emitter_destroy(ctrl_ParticleManager.system, emitter)

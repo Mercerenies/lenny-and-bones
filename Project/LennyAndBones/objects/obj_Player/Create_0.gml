@@ -11,3 +11,7 @@ src_y = -1;
 dest_y = -1;
 
 anim_index = 0;
+
+isDead = function() {
+  return image_alpha < 1;
+}

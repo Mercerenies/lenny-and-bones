@@ -25,6 +25,12 @@ if (animating) {
       flying = false;
       move_dir = -1;
     }
+
+    // Check for death :(
+    if (position_meeting(x, y, obj_FireTile)) {
+      instance_create_layer(-128, -128, "Instances_UI", obj_DyingAnim);
+    }
+
   }
 }
 if (ctrl_RoomManager.acceptingInput()) {

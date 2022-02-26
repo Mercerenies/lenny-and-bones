@@ -9,6 +9,9 @@ acceptingInput = function() {
   if (obj_Player.animating) {
     return false;
   }
+  if (obj_Player.isDead()) {
+    return false;
+  }
   if (instance_exists(par_Animation)) {
     return false;
   }
@@ -16,6 +19,9 @@ acceptingInput = function() {
 }
 
 getHighlightedTetromino = function() {
+  if (obj_Player.isDead()) {
+    return noone;
+  }
   var inst = instance_position(mouse_x, mouse_y, obj_TetrominoCounter);
   if (instance_exists(inst)) {
     if ((!inst.visible) || (inst.count <= 0)) {
