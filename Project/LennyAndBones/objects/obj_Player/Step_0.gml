@@ -44,24 +44,29 @@ if (ctrl_RoomManager.acceptingInput()) {
     var targetx = x + GRID_SIZE * dcos(input_key * 90);
     var targety = y + GRID_SIZE * dsin(input_key * 90);
     if (!Movement.magnetAt(targetx, targety)) {
+      var okay = true;
       if (Movement.magnetsAdjacentTo(targetx, targety) > 0) {
         // Standard move
         animating = true;
         move_dir = input_key;
         flying = false;
-      } else {
+      } else if (ctrl_RoomManager.canFly) {
         // Flying move
         animating = true;
         move_dir = input_key;
         flying = true;
         just_left_wall = true;
+      } else {
+        okay = false;
       }
-      ctrl_UndoManager.pushStack(UndoCut);
-      ctrl_UndoManager.pushStack(new PlayerMoveEvent(x, y));
-      src_x = x;
-      src_y = y;
-      dest_x = x + GRID_SIZE * dcos(move_dir * 90);
-      dest_y = y + GRID_SIZE * dsin(move_dir * 90);
+      if (okay) {
+        ctrl_UndoManager.pushStack(UndoCut);
+        ctrl_UndoManager.pushStack(new PlayerMoveEvent(x, y));
+        src_x = x;
+        src_y = y;
+        dest_x = x + GRID_SIZE * dcos(move_dir * 90);
+        dest_y = y + GRID_SIZE * dsin(move_dir * 90);
+      }
     }
   }
 }

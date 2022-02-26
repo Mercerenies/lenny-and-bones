@@ -1,6 +1,9 @@
 
 globalBlockRot = 0;
 
+canFly = true;
+canRotate = true;
+
 draggingTetromino = undefined;
 draggingX = 0;
 draggingY = 0;

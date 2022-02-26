@@ -26,6 +26,9 @@ if (ctrl_RoomManager.acceptingInput()) {
       draw_sprite(spr_TargetBox, image_index, targetx, targety);
     } else {
       // Flying move
+      if (!ctrl_RoomManager.canFly) {
+        continue;
+      }
       var loopcount = 0;
       while (!Movement.magnetAt(targetx + GRID_SIZE * dcos(dir), targety + GRID_SIZE * dsin(dir))) {
         targetx += GRID_SIZE * dcos(dir);
