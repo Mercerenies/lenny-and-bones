@@ -1,6 +1,11 @@
 
 image_alpha = 0.25;
 if (ctrl_RoomManager.getHighlightedTetromino() == self.id) {
+  if (is_undefined(ctrl_RoomManager.draggingTetromino)) {
+    image_alpha = 1.0;
+  }
+}
+if (ctrl_RoomManager.draggingTetromino == self.image_index) {
   image_alpha = 1.0;
 }
 

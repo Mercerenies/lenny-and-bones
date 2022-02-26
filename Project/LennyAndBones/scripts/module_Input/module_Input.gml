@@ -24,3 +24,11 @@ Input.wheelUp = function() {
 Input.wheelDown = function() {
   return keyboard_check_pressed(ord("E")) || mouse_wheel_down();
 }
+
+Input.mouseDown = function() {
+  return mouse_check_button_pressed(mb_left);
+}
+
+Input.mouseUp = function() {
+  return mouse_check_button_released(mb_left);
+}

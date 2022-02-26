@@ -1,5 +1,11 @@
 
 var highlighted_tetromino = ctrl_RoomManager.getHighlightedTetromino();
+var projected_tetromino = undefined;
+if (!is_undefined(ctrl_RoomManager.draggingTetromino)) {
+  projected_tetromino = Blocks.fromIndex(ctrl_RoomManager.draggingTetromino).rotated(ctrl_RoomManager.globalBlockRot);
+} else if (instance_exists(highlighted_tetromino)) {
+  projected_tetromino = highlighted_tetromino.toTetromino();
+}
 
 draw_set_alpha(image_alpha);
 if (ctrl_RoomManager.acceptingInput()) {
@@ -34,18 +40,17 @@ if (ctrl_RoomManager.acceptingInput()) {
     }
   }
 
-  if (instance_exists(highlighted_tetromino)) {
+  if (!is_undefined(projected_tetromino)) {
 
     // Show where the block would end up in each direction.
     for (var dir = 0; dir < 360; dir += 90) {
 
-      var tetromino = highlighted_tetromino.toTetromino();
-      var target_point = tetromino.project(obj_Player.x, obj_Player.y, dir);
+      var target_point = projected_tetromino.project(obj_Player.x, obj_Player.y, dir);
 
       if (!is_undefined(target_point)) {
-        for (var i = 0; i < array_length(tetromino.arr); i++) {
-          var xx = target_point.xx + GRID_SIZE * tetromino.arr[i].xx;
-          var yy = target_point.yy + GRID_SIZE * tetromino.arr[i].yy;
+        for (var i = 0; i < array_length(projected_tetromino.arr); i++) {
+          var xx = target_point.xx + GRID_SIZE * projected_tetromino.arr[i].xx;
+          var yy = target_point.yy + GRID_SIZE * projected_tetromino.arr[i].yy;
           draw_sprite(spr_BlockTargetBox, image_index, xx, yy);
         }
       }
