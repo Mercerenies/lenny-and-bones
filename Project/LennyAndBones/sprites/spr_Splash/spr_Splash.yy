@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"9a6e1a94-c5ac-4ac2-9da5-3b1aae1db04e","path":"sprites/spr_UndoManager/spr_UndoManager.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"9a6e1a94-c5ac-4ac2-9da5-3b1aae1db04e","path":"sprites/spr_UndoManager/spr_UndoManager.yy",},"LayerId":{"name":"b653c779-dc7d-40a7-ab51-e3e35013c648","path":"sprites/spr_UndoManager/spr_UndoManager.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_UndoManager","path":"sprites/spr_UndoManager/spr_UndoManager.yy",},"resourceVersion":"1.0","name":"9a6e1a94-c5ac-4ac2-9da5-3b1aae1db04e","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"2ef42981-146a-418d-a42f-31bd29f39bd0","path":"sprites/spr_Splash/spr_Splash.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"2ef42981-146a-418d-a42f-31bd29f39bd0","path":"sprites/spr_Splash/spr_Splash.yy",},"LayerId":{"name":"bcdf1af7-a1a1-4120-ad66-372ecf59ad87","path":"sprites/spr_Splash/spr_Splash.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_Splash","path":"sprites/spr_Splash/spr_Splash.yy",},"resourceVersion":"1.0","name":"2ef42981-146a-418d-a42f-31bd29f39bd0","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_UndoManager","path":"sprites/spr_UndoManager/spr_UndoManager.yy",},
+    "spriteId": {"name":"spr_Splash","path":"sprites/spr_Splash/spr_Splash.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"f7b14e94-6fe5-49ff-a2da-9138a5774550","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9a6e1a94-c5ac-4ac2-9da5-3b1aae1db04e","path":"sprites/spr_UndoManager/spr_UndoManager.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"50f31196-5698-4ac0-9e31-0e100631e00f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2ef42981-146a-418d-a42f-31bd29f39bd0","path":"sprites/spr_Splash/spr_Splash.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,22 +58,22 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_UndoManager","path":"sprites/spr_UndoManager/spr_UndoManager.yy",},
+    "parent": {"name":"spr_Splash","path":"sprites/spr_Splash/spr_Splash.yy",},
     "resourceVersion": "1.4",
-    "name": "spr_UndoManager",
+    "name": "spr_Splash",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"b653c779-dc7d-40a7-ab51-e3e35013c648","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"bcdf1af7-a1a1-4120-ad66-372ecf59ad87","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Undo",
-    "path": "folders/Managers/Undo.yy",
+    "name": "Managers",
+    "path": "folders/Managers.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_UndoManager",
+  "name": "spr_Splash",
   "tags": [],
   "resourceType": "GMSprite",
 }

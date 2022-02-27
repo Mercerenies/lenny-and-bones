@@ -18,5 +18,6 @@ isDead = function() {
 
 win = function() {
   // TODO Animate me
+  global.hideDialogue = false;
   room_goto_next();
 }
