@@ -1,0 +1,2 @@
+canFly = false;
+//canRotate = false;
