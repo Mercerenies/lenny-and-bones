@@ -71,5 +71,15 @@ if ((Input.backspacePressed()) && (canUndo())) {
   ctrl_UndoManager.backtrack();
 }
 
+if (Input.escDown()) {
+  _escTimer += 1;
+  if (_escTimer > 180) {
+    // DEBUG CODE (Change to title page)
+    room_goto(rm_Stage1);
+  }
+} else {
+  _escTimer = 0;
+}
+
 // Sand particle effects
 ctrl_ParticleManager.sandyWinds();

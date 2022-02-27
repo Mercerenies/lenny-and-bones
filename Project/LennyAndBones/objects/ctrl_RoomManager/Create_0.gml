@@ -1,6 +1,7 @@
 
 globalBlockRot = 0;
 startBlockRot = 0;
+_escTimer = 0;
 
 canFly = false;
 canRotate = false;
@@ -82,4 +83,14 @@ getMouseTarget = function() {
     return nearest;
   }
   return undefined;
+}
+
+getLevelNumber = function() {
+  var room_name = room_get_name(room);
+  var nums = string_digits(room_name);
+  if (nums == "") {
+    return 1;
+  } else {
+    return real(nums);
+  }
 }

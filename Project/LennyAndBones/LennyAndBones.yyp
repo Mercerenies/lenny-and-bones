@@ -48,6 +48,7 @@
     {"id":{"name":"rm_Stage13","path":"rooms/rm_Stage13/rm_Stage13.yy",},"order":17,},
     {"id":{"name":"spr_BlueHat","path":"sprites/spr_BlueHat/spr_BlueHat.yy",},"order":13,},
     {"id":{"name":"enum_InputKey","path":"scripts/enum_InputKey/enum_InputKey.yy",},"order":1,},
+    {"id":{"name":"draw_arc","path":"scripts/draw_arc/draw_arc.yy",},"order":8,},
     {"id":{"name":"rm_Stage12","path":"rooms/rm_Stage12/rm_Stage12.yy",},"order":14,},
     {"id":{"name":"rm_Init","path":"rooms/rm_Init/rm_Init.yy",},"order":1,},
     {"id":{"name":"spr_WallImage","path":"sprites/spr_WallImage/spr_WallImage.yy",},"order":4,},

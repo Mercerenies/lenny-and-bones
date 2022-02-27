@@ -37,6 +37,10 @@ Input.escPressed = function() {
   return keyboard_check_pressed(vk_escape);
 }
 
+Input.escDown = function() {
+  return keyboard_check(vk_escape);
+}
+
 Input.backspacePressed = function() {
   return keyboard_check_pressed(vk_backspace);
 }
