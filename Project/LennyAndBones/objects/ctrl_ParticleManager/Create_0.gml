@@ -1,5 +1,6 @@
 
 system = part_system_create_layer("Instances_Particle", true);
+sand_system = part_system_create_layer("Instances_SandParticle", true);
 
 cloud = part_type_create();
 part_type_shape(cloud, pt_shape_cloud);
@@ -51,11 +52,11 @@ part_type_life(player_sand, 120, 240);
 // TODO More background effects, and make the sand faster on later stages (it's more epic ^.^)
 
 cloud_emitter = part_emitter_create(system);
-sand_emitter = part_emitter_create(system);
-part_emitter_region(system, sand_emitter, -128, room_width, 0, room_height, ps_shape_rectangle, ps_distr_linear);
+sand_emitter = part_emitter_create(sand_system);
+part_emitter_region(sand_system, sand_emitter, -128, room_width, 0, room_height, ps_shape_rectangle, ps_distr_linear);
 
 sandyWinds = function() {
-  part_emitter_burst(system, sand_emitter, player_sand, 20);
+  part_emitter_burst(sand_system, sand_emitter, player_sand, 20);
 }
 
 puffOfClouds = function(xx, yy) {
