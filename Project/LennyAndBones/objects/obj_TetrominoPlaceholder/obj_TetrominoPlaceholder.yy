@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_Tetromino",
-    "path": "sprites/spr_Tetromino/spr_Tetromino.yy",
+    "name": "spr_TetrominoButOffset",
+    "path": "sprites/spr_TetrominoButOffset/spr_TetrominoButOffset.yy",
   },
   "solid": false,
   "visible": false,
